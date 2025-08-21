@@ -3,55 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contextly – Instant Smart Brief Generator</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>ShopFlow - Modern Ecommerce SaaS Platform</title>
+    <meta name="description" content="ShopFlow helps businesses launch and grow their online stores with our powerful SaaS ecommerce platform">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Contextly</h1>
-        <p>Your Instant Smart Brief Generator</p>
+
+    <header class="header">
+        <nav class="container nav">
+            <div class="nav-logo">
+                <svg fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12z"/>
+                    <path d="M10 5a1 1 0 011 1v4a1 1 0 01-2 0V6a1 1 0 011-1z"/>
+                </svg>
+                <span class="nav-logo-text">ShopFlow</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="nav-link">Login</a>
+                <a href="#pricing" class="btn btn-primary">Get Started</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
     </header>
 
-    <main>
-        <div class="input-section">
-            <textarea id="inputText" placeholder="Paste your text or a URL here..."></textarea>
-            <div class="controls">
-                <button id="summarizeBtn">Summarize</button>
-                <div class="options">
-                    <label for="toneSelect">Tone:</label>
-                    <select id="toneSelect">
-                        <option value="professional">Professional</option>
-                        <option value="casual">Casual</option>
-                        <option value="executive">Executive</option>
-                    </select>
-                    <button id="copyBtn">Copy</button>
-                    <button id="exportBtn">Export PDF</button>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Launch Your Online Store in Minutes</h1>
+                <p>ShopFlow provides everything you need to start, run, and grow your ecommerce business with our all-in-one SaaS platform.</p>
+                <div class="hero-actions">
+                    <a href="#pricing" class="btn btn-primary">Start Free Trial</a>
+                    <a href="#features" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="https://img.freepik.com/free-vector/ecommerce-web-store-hand-drawn-illustration_107791-10966.jpg?semt=ais_hybrid&w=740&q=80" alt="ShopFlow dashboard interface" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container text-center">
+            <h2>Powerful Features</h2>
+            <p>Everything you need to build, manage, and scale your online store</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Product Management</h3>
+                    <p>Easily add, organize, and manage your products with our intuitive dashboard.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Payment Processing</h3>
+                    <p>Accept payments from all major credit cards and digital wallets with zero hassle.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Shipping & Fulfillment</h3>
+                    <p>Integrated shipping solutions with real-time rates from major carriers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Track sales, customer behavior, and inventory with powerful analytics tools.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Responsive</h3>
+                    <p>Your store looks perfect on any device with our fully responsive themes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Our dedicated support team is available around the clock to help you.</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="output-section" id="outputSection">
-            <div id="executiveSummary" class="brief-box">
-                <h2>Executive Summary</h2>
-                <div class="content"></div>
-            </div>
+    <section id="pricing" class="pricing">
+        <div class="container text-center">
+            <h2>Simple, Transparent Pricing</h2>
+            <p>Choose the perfect plan for your business needs</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <p>Perfect for small businesses getting started</p>
+                    <div class="price">
+                        $29<span>/month</span>
+                    </div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Up to 100 products</li>
+                        <li><i class="fas fa-check"></i> Basic analytics</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Get Started</a>
+                </div>
 
-            <div id="actionItems" class="brief-box">
-                <h2>Action Items</h2>
-                <div class="content"></div>
-            </div>
+                <div class="pricing-card popular">
+                    <div class="badge">Most Popular</div>
+                    <h3>Professional</h3>
+                    <p>For growing businesses with more needs</p>
+                    <div class="price">
+                        $79<span>/month</span>
+                    </div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Up to 1000 products</li>
+                        <li><i class="fas fa-check"></i> Advanced analytics</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Custom domain</li>
+                        <li><i class="fas fa-check"></i> Discount codes</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
 
-            <div id="quickInsights" class="brief-box">
-                <h2>Quick Insights</h2>
-                <div class="content"></div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <p>For large businesses with custom needs</p>
+                    <div class="price">
+                        $199<span>/month</span>
+                    </div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Unlimited products</li>
+                        <li><i class="fas fa-check"></i> Advanced analytics</li>
+                        <li><i class="fas fa-check"></i> 24/7 VIP support</li>
+                        <li><i class="fas fa-check"></i> Custom domain</li>
+                        <li><i class="fas fa-check"></i> API access</li>
+                        <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Get Started</a>
+                </div>
             </div>
         </div>
-    </main>
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="app.js"></script>
+    <section id="testimonials" class="testimonials">
+        <div class="container text-center">
+            <h2>What Our Customers Say</h2>
+            <p>Trusted by thousands of businesses worldwide</p>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybCUyMGltYWdlfGVufDB8fDB8fHww" alt="Sarah Johnson">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>CEO, Fashion Boutique</p>
+                        </div>
+                    </div>
+                    <p class="quote">"ShopFlow has transformed our online business. We've seen a 200% increase in sales since switching to their platform. The interface is intuitive and their support team is fantastic!"</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://www.shutterstock.com/shutterstock/photos/1865153395/display_1500/stock-photo-portrait-of-young-smiling-woman-looking-at-camera-with-crossed-arms-happy-girl-standing-in-1865153395.jpg" alt="Michael Chen">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <p>Founder, Tech Gadgets</p>
+                        </div>
+                    </div>
+                    <p class="quote">"As a tech startup, we needed a platform that could scale with us. ShopFlow's API integration and customization options have been game-changers for our business operations."</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwb78Q-sfrUmf0tOuD-MUBFpxRMdsZxl8ETg&s" alt="Emma Rodriguez">
+                        <div>
+                            <h4>Emma Rodriguez</h4>
+                            <p>Owner, Home Decor</p>
+                        </div>
+                    </div>
+                    <p class="quote">"The analytics dashboard alone is worth the price. I can now make data-driven decisions about inventory and marketing that have significantly improved our profitability."</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container text-center">
+            <h2>Ready to Grow Your Business?</h2>
+            <p>Join thousands of businesses using ShopFlow to power their online stores. Start your 14-day free trial today.</p>
+            <a href="#pricing" class="btn">Get Started Now</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <svg fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12z"/>
+                            <path d="M10 5a1 1 0 011 1v4a1 1 0 01-2 0V6a1 1 0 011-1z"/>
+                        </svg>
+                        <span>ShopFlow</span>
+                    </div>
+                    <p>The all-in-one ecommerce platform for businesses of all sizes.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.x.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button class="btn-footer">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 ShopFlow. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js">
+    </script>
 </body>
 </html>
