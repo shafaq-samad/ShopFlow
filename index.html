@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contextly – Instant Smart Brief Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Contextly</h1>
+        <p>Your Instant Smart Brief Generator</p>
+    </header>
+
+    <main>
+        <div class="input-section">
+            <textarea id="inputText" placeholder="Paste your text or a URL here..."></textarea>
+            <div class="controls">
+                <button id="summarizeBtn">Summarize</button>
+                <div class="options">
+                    <label for="toneSelect">Tone:</label>
+                    <select id="toneSelect">
+                        <option value="professional">Professional</option>
+                        <option value="casual">Casual</option>
+                        <option value="executive">Executive</option>
+                    </select>
+                    <button id="copyBtn">Copy</button>
+                    <button id="exportBtn">Export PDF</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="output-section" id="outputSection">
+            <div id="executiveSummary" class="brief-box">
+                <h2>Executive Summary</h2>
+                <div class="content"></div>
+            </div>
+
+            <div id="actionItems" class="brief-box">
+                <h2>Action Items</h2>
+                <div class="content"></div>
+            </div>
+
+            <div id="quickInsights" class="brief-box">
+                <h2>Quick Insights</h2>
+                <div class="content"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
